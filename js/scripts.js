@@ -6,13 +6,13 @@ $(document).ready(function(){
   event.preventDefault();
   var input = $("#inputNumber").val();
   var result = findThrees(input);
-  // $("#result").append("<li>" + input "</li>");
+  $("#result").append("<li>" + result "</li>");
 
 
 });
 });
 
-//Business Logic
+// Business Logic
 
 function findThrees(input) {
   var numbers = input.split("");
@@ -24,27 +24,20 @@ function findThrees(input) {
       return "beep"
     }else if (numbers[i] === "1")
     return "boop"
-  }else {
+    }else {
     return numbers;
+    }
   }
-}
-}
+};
 
 
-  // numbers.forEach(number){
-  //   if (number === "3"){
-  //     return "sorryDave";
-  //   }else if (number === "2" ){
-  //     return "beep";
-  //   }else if (number === "1"){
-  //     return "boop";
-  //   }else{
-  //     return numbers;
-  //   };
-  //
-  // //
-  //   }
-  // //     return
-  //   }
-  //
-  //
+  numbers.forEach(number){
+    if (number === "3"){
+      return "sorryDave";
+    }else if (number === "2" ){
+      return "beep";
+    }else if (number === "1"){
+      return "boop";
+    }else{
+      return numbers;
+    };
