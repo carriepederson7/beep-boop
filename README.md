@@ -12,3 +12,4 @@ Specs List
 
 
 Why does my html crash when I test functions in the console log?
+Why can I not run this with a for loop

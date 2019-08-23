@@ -15,20 +15,29 @@ $(document).ready(function(){
 //Business Logic
 
 function findThrees(input) {
-  var newArray = parseInt(input);
-  var sorryDave = "I'm sorry Dave, I can't do that."
-  console.log(newArray);
-  // var threes = [];
+  var numbers = input.split("");
+  var threes = [];
+  var output = [];
+  // var sorryDave = "I'm sorry Dave, I can't do that."
+  // var beep = "beep"
+  // var boop = "boop"
+  console.log(numbers);
+  console.log(threes);
 
-  for(var i= 0; i>=newArray.length; i++){
-    if (newArray[i] === 3){
-      return sorryDave;
-    } else if (newArray[i] === 2){
-      return
+  numbers.forEach(number){
+    if (number === "3"){
+      return "sorryDave";
+    }else if (number === "2" ){
+      return "beep";
+    }else if (number === "1"){
+      return "boop";
+    }else{
+      return numbers;
+    };
 
+  //
     }
-      return
+  //     return
     }
-  }
 
-// alert("ranloop");
+  //
