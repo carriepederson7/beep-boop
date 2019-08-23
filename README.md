@@ -1,17 +1,11 @@
-#| Header One     | Header Two     | Header Two  |    
-_| :------------- | :------------- |             |
-_| Item One       | Item Two       |             |
-#| Item One       | Item Two      
-#| Item One       | Item Two      
-#| Item One       | Item Two      
 
-Create a web application that takes a number from a user and returns a range of numbers from 0 to the user inputted number with the following exceptions:
+Specs List
 
-Numbers that contain a 1: all digits are replaced (all digits) with "Beep!"
-Numbers that contain a 2: all digits are replaced (all digits) with "Boop!"
-Numbers that contain a 3: all digits are replaced (all digits) with "I'm sorry, Dave. I'm afraid I can't do that."
-These exceptions are written from least to most important. The first exception should apply unless the second exception does, and the same with the second and third. So, for example, in your finished program,
-
-The number 13 should be replaced with "I'm sorry, Dave. I'm afraid I can't do that."
-The number 21 should be replaced with "Boop".
-The number 32 should be replaced with "I'm sorry, Dave. I'm afraid I can't do that."
+| Input Example     | Output Example     | Spec                                                                     |    
+| :-------------    | :-------------     | :-------------                                                           |
+| 3, 34, 356        | "I'm sorry, Dave. I'm afraid I can't do that." |The program should take a number containing the digit 3 and return "I'm sorry, Dave. I'm afraid I can't do that."|
+| 2, 32, 242        | "Boop"             |The program should take a number containing the digit 2 and return "Boop!"|
+| 1, 21, 121        | "Beep"             |The program should take a number containing the digit 1 and return "Beep!"|
+| 5, 57, 899        | 5, 57, 899         |The program should take a number and return the inputted number.|
+| Item One          | Item Two           |The program should append all outputs returns to a list.|
+| a,^,!             | "Please enter a number " |The program should take a non-numeric entries and return "Please enter a number."|
