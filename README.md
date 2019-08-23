@@ -9,3 +9,6 @@ Specs List
 | 5, 57, 899        | 5, 57, 899         |The program should take a number and return the inputted number.|
 | Item One          | Item Two           |The program should append all outputs returns to a list.|
 | a,^,!             | "Please enter a number " |The program should take a non-numeric entries and return "Please enter a number."|
+
+
+Why does my html crash when I test functions in the console log?
