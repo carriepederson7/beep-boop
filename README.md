@@ -1,4 +1,4 @@
-## Beep-Boop 
+## Beep-Boop
 
 #### Webpage using HTML, CSS and JavaScript to create a machine that responds "Beep," "Boop" or "I'm sorry Dave, I'm afraid I can't do that." 8.23.19
 
@@ -8,9 +8,9 @@
 
 A web application that takes a number from a user and returns a range of numbers from 0 to the user inputted number with the following exceptions:
 
-_Numbers that contain a 1: all digits are replaced (all digits) with "Beep!"_
-_Numbers that contain a 2: all digits are replaced (all digits) with "Boop!"_
-_Numbers that contain a 3: all digits are replaced (all digits) with "I'm sorry, Dave. I'm afraid I can't do that."_
+* Numbers that contain a 1: all digits are replaced (all digits) with "Beep!"
+* Numbers that contain a 2: all digits are replaced (all digits) with "Boop!"
+* Numbers that contain a 3: all digits are replaced (all digits) with "I'm sorry, Dave. I'm afraid I can't do that."
 
 Specs List
 
