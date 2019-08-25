@@ -16,18 +16,20 @@ $(document).ready(function(){
 
 function findThrees(input) {
   var numbers = input.split("");
+  console.log(numbers);
   var output = [];
 
-  for(var i=1; i<numbers.length; i++) {
+  for(var i=0; i<numbers.length; i++) {
     if(numbers[i]=== "3"){
       output.push("Sorry Dave.");
     }else if (numbers[i]==="2"){
       output.push("Beep.");
     }else if (numbers[i] === "1"){
-      output.push("Beep.");
+      output.push("Boop.");
     }else {
-      output.push(numbers.length);
+      output.push(numbers[i]);
     }
+    console.log(output);
   }
   return output;
 }
