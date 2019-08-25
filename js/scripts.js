@@ -6,7 +6,7 @@ $(document).ready(function(){
   event.preventDefault();
   var input = $("#inputNumber").val();
   var result = findThrees(input);
-  $("#result").append("<li>" + result "</li>");
+  $("#result").append("<br>" + "<li>" + result +"</li>");
 
 
 });
@@ -16,28 +16,30 @@ $(document).ready(function(){
 
 function findThrees(input) {
   var numbers = input.split("");
+  var output = [];
 
-  for(var i=0; i<numbers.length; i++) {
+  for(var i=1; i<numbers.length; i++) {
     if(numbers[i]=== "3"){
-      return "Sorry Dave."
+      output.push("Sorry Dave.");
     }else if (numbers[i]==="2"){
-      return "beep"
-    }else if (numbers[i] === "1")
-    return "boop"
+      output.push("Beep.");
+    }else if (numbers[i] === "1"){
+      output.push("Beep.");
     }else {
-    return numbers;
+      output.push(numbers.length);
     }
   }
-};
+  return output;
+}
 
 
-  numbers.forEach(number){
-    if (number === "3"){
-      return "sorryDave";
-    }else if (number === "2" ){
-      return "beep";
-    }else if (number === "1"){
-      return "boop";
-    }else{
-      return numbers;
-    };
+  // numbers.forEach(number){
+  //   if (number === "3"){
+  //     return "sorryDave";
+  //   }else if (number === "2" ){
+  //     return "beep";
+  //   }else if (number === "1"){
+  //     return "boop";
+  //   }else{
+  //     return numbers;
+  //   };
