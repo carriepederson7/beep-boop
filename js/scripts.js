@@ -15,15 +15,34 @@ $(document).ready(function(){
 // Business Logic
 
 function findThrees(input) {
-  var numbers = input.split("");
-  // var newNumbers = parseInt(numbers);
-  // console.log(numbers);
+  var digits = input.split("");
+  var numbers=[];
+  var notNumber=[];
   var textResponse = [];
   var output = [];
-  // console.log(newNumbers);
+  var regex = /^[0-9]*$/;
+  // var newNumbers = parseInt(numbers);
+  // console.log(numbers);
+  console.log(notNumber);
 
+digits.forEach(function(digit){
+  if(regex.test(digit)){
+  numbers.push(digit);
+  }else{
+  output.push("Please enter a positive number.");
+  }
+});
+    //
+    // for(var i=0; i<digits.length; i++){
+    //   if(regex.test(digits[i]){
+    //     numbers.push(digits);
+    //   }else{
+    //     alert("Please enter a number.");
+    //   }
+    //   break;
+    // }
 
-
+console.log(numbers);
 
   for(var i=0; i<numbers.length; i++) {
     if(numbers[i]=== "3"){
@@ -33,16 +52,14 @@ function findThrees(input) {
     }else if (numbers[i] === "1"){
       textResponse.push("Beep");
     }else {
-      // output.push(numbers[i]);
     }
   }
 
-  // numbers= numberResult.join();
 
   console.log(textResponse);
 
-  if (textResponse.includes("Sorry Dave" )){
-    output.push("I'm sorry Dave, I can't do that.")
+  if (textResponse.includes("Sorry Dave")){
+    output.push("I'm sorry Dave, I'm afraid I can't do that.")
   }else if (textResponse.includes("Boop")){
     output.push("Boop")
   }else if(textResponse.includes("Beep")){
