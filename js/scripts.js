@@ -16,9 +16,11 @@ $(document).ready(function(){
 
 function findThrees(input) {
   var numbers = input.split("");
+  // var newNumbers = parseInt(numbers);
   // console.log(numbers);
   var textResponse = [];
   var output = [];
+  // console.log(newNumbers);
 
 
 
@@ -26,7 +28,7 @@ function findThrees(input) {
   for(var i=0; i<numbers.length; i++) {
     if(numbers[i]=== "3"){
       textResponse.push("Sorry Dave");
-    }else if (numbers[i]==="2"){
+    }else if (numbers[i]=== "2"){
       textResponse.push("Boop");
     }else if (numbers[i] === "1"){
       textResponse.push("Beep");
@@ -40,13 +42,13 @@ function findThrees(input) {
   console.log(textResponse);
 
   if (textResponse.includes("Sorry Dave" )){
-    output.push("Im Sorry Dave.")
+    output.push("I'm sorry Dave, I can't do that.")
   }else if (textResponse.includes("Boop")){
     output.push("Boop")
   }else if(textResponse.includes("Beep")){
     output.push("Beep")
   }else{
-    alert(numbers)
+    output.push(numbers.join(""))
   }
 
   // textResponse.length=10
