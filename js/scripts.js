@@ -15,23 +15,23 @@ $(document).ready(function(){
 // Business Logic
 
 function findThrees(input) {
-  var digits = input.split("");
+  var digits = parseInt(input) +1 ;
+  console.log(digits);
+
   var numbers=[];
-  var notNumber=[];
   var textResponse = [];
   var output = [];
   var regex = /^[0-9]*$/;
   // var newNumbers = parseInt(numbers);
-  // console.log(numbers);
-  console.log(notNumber);
 
-digits.forEach(function(digit){
-  if(regex.test(digit)){
-  numbers.push(digit);
-  }else{
-  output.push("Please enter a positive number.");
-  }
-});
+
+// digits.forEach(function(digit){
+//   if(regex.test(digit)){
+//   numbers.push(digit);
+//   }else{
+//   output.push("Please enter a positive number.");
+//   }
+// });
     //
     // for(var i=0; i<digits.length; i++){
     //   if(regex.test(digits[i]){
@@ -42,31 +42,39 @@ digits.forEach(function(digit){
     //   break;
     // }
 
-console.log(numbers);
 
-  for(var i=0; i<numbers.length; i++) {
-    if(numbers[i]=== "3"){
-      textResponse.push("Sorry Dave");
-    }else if (numbers[i]=== "2"){
-      textResponse.push("Boop");
-    }else if (numbers[i] === "1"){
-      textResponse.push("Beep");
+    console.log(digits);
+
+
+  for(var i=0; i<digits; i++){
+    if(i.toString().includes("3")){
+      output.push("Sorry Dave");
+    }else if (i.toString().includes("2")){
+      output.push("Boop");
+    }else if (i.toString().includes("1")){
+      output.push("Beep");
     }else {
+      output.push(i)
     }
   }
 
+  return output;
 
-  console.log(textResponse);
 
-  if (textResponse.includes("Sorry Dave")){
-    output.push("I'm sorry Dave, I'm afraid I can't do that.")
-  }else if (textResponse.includes("Boop")){
-    output.push("Boop")
-  }else if(textResponse.includes("Beep")){
-    output.push("Beep")
-  }else{
-    output.push(numbers.join(""))
+
   }
+
+  // console.log(textResponse);
+
+  // if (textResponse.includes("Sorry Dave")){
+  //   output.push("I'm sorry Dave, I'm afraid I can't do that.")
+  // }else if (textResponse.includes("Boop")){
+  //   output.push("Boop")
+  // }else if(textResponse.includes("Beep")){
+  //   output.push("Beep")
+  // }else{
+  //   output.push(numbers.join(""))
+  // }
 
   // textResponse.length=10
   // for (var i=0; i<textResponse.length; i++){
@@ -82,23 +90,3 @@ console.log(numbers);
   // }
     // console.log(textResponse);
     // console.log(output);
-
-    return output[0];
-
-
-
-}
-
-
-
-
-  // numbers.forEach(number){
-  //   if (number === "3"){
-  //     return "sorryDave";
-  //   }else if (number === "2" ){
-  //     return "beep";
-  //   }else if (number === "1"){
-  //     return "boop";
-  //   }else{
-  //     return numbers;
-  //   };
